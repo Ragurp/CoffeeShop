@@ -6,6 +6,8 @@ function formchecker() {
     if (emcheck) {
       let value = JSON.parse(emcheck);
       if (value.Password === password) {
+        value = JSON.stringify(value);
+        localStorage.setItem("logerName", value);
         setTimeout(() => {
           location.replace("../index.html")
         }, 100);

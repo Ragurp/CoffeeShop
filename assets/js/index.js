@@ -1,20 +1,10 @@
 // profile update.................
 let userName = document.querySelector(".userName");
-let obj = localStorage;
+let obj = localStorage.getItem("logerName");
+obj = JSON.parse(obj);
 let getNames = [];
-for (const item in obj) {
-  if (item.includes("@gmail.com")) {
-    getNames.push(JSON.parse(obj[item]));
-    setName();
-  }
-}
-function setName() {
-  if (getNames.length > 0) {
-    getNames.forEach(ele => {
-      userName.innerHTML = `${ele.Name}`;
-    });
-  }
-}
+userName.innerHTML = `${obj.Name}`;
+
 
 // signup/Login alert ................................................
 window.addEventListener("load", () => {
