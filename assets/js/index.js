@@ -1,9 +1,10 @@
 // profile update.................
 let userName = document.querySelector(".userName");
 let obj = localStorage.getItem("logerName");
-obj = JSON.parse(obj);
-let getNames = [];
-userName.innerHTML = `${obj.Name}`;
+obj = JSON.parse(obj) || "none";
+if (obj != "none") {
+  userName.innerHTML = `${obj.Name}`;
+}
 
 
 // signup/Login alert ................................................
