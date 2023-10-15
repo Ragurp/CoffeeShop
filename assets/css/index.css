@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.profile {
+    text-align: center;
+    background-color: #CCF381;
+    padding: 5px 0px;
+    text-transform: capitalize;
+    /* font-weight: 400; */
+}
+
+.userName {
+    font-weight: 900;
+    color: #369fa4;
+    text-transform: uppercase;
+}
+
+.navbar-brand img,
+.footer img {
+    width: 45px;
+    height: 45px;
+    transform: rotate(-90deg);
+}
+
+.navbar-toggler {
+    color: #000000;
+}
+
+.navbar button {
+    border: none;
+    background-color: inherit;
+}
+
+/* small nav............................................ */
+.nav {
+    z-index: 10;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5% 5%;
+    overflow: auto;
+}
+
+.x {
+    position: absolute;
+    right: 20px;
+}
+
+.nav a {
+    color: #fff !important;
+}
+
+/* small nav.................................. */
+
+/* cart-box............................... */
+.cart-box {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-box {
+    background-color: #E2D1F9;
+    margin: 70px 20px 0 20px;
+    padding: 30px;
+}
+
+.bg-info {
+    background-color: #CCF381 !important;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px#9a9999;
+    padding: 20px;
+}
+
+.name {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.cart-x a {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ccc !important;
+}
+
+.cart-topic {
+    padding: 10px 0px;
+}
+
+.qtydiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qtydiv input {
+    width: 40px;
+    height: 28px;
+}
+
+.tdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+    background-color: #007050;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 30px 0px #9a9999;
+}
+
+
+center {
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: #FEE715;
+    color: #000000;
+}
+
+/* cart-box............................... */
+
+.navbar-brand,
+.footer h3 {
+    color: #12022F;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+.nav-item:hover .box {
+    display: block;
+}
+
+.circle .box {
+    display: none;
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    background-color: #114639;
+    border-radius: 50%;
+}
+
+.active .box {
+    display: block;
+}
+
+.navbar-icon {
+    color: #000000;
+    margin: 10px;
+}
+
+.navbar-icon:hover {
+    color: #000000;
+}
+
+.badge {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 30px;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+}
+
+.pure {
+    background-image: url("../img/navbarbgimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 35% 35%;
+    padding: 200px 0px !important;
+}
+
+.pure h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #114639;
+    text-align: left;
+}
+
+.pure .input-group {
+    width: 100%;
+    position: relative;
+}
+
+.pure input {
+    border: none;
+    height: 3.5rem;
+    border-radius: 30px !important;
+    width: 100%;
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.pure span {
+    position: absolute;
+    border: none;
+    border-radius: 30px !important;
+    padding: 0 30px;
+    right: 5px;
+    top: 3px;
+    bottom: 3px;
+    background-color: #114639;
+    color: #FFF;
+}
+
+.pure .fa-play {
+    color: #114639;
+    background-color: #FFF;
+    border-radius: 50%;
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px 0px #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #114639;
+}
+
+.independ h3 {
+    font-weight: 900;
+    color: #114639;
+    margin-bottom: 25px;
+}
+
+.independ .content {
+    padding: 40px;
+}
+
+.independ button {
+    border: none;
+    padding: 15px 30px;
+    background-color: #114639;
+    color: #FFF;
+    border-radius: 30px !important;
+}
+
+.line {
+    background-color: #114639;
+    width: 50px;
+    height: 5px;
+}
+
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.independ img {
+    width: 100%;
+    height: 450px;
+}
+
+.independ .patten {
+    width: 50px;
+    height: 160px;
+    margin-top: 50%;
+}
+
+.independ {
+    position: relative;
+}
+
+.independ .card {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 3px 3px 30px #ccc;
+    border-radius: 25px;
+}
+
+.independ .card .img {
+    background-color: #114639;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px 3px #ccc;
+}
+
+.independ .card img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.independ .card i {
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.bg-success {
+    background-color: #F8F8F8 !important;
+}
+
+.coffee-shop .green {
+    background-image: url("../img/green.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.coffee-shop img {
+    height: 100%;
+    width: 100%;
+}
+
+.navcon {
+    display: flex;
+    margin: 30px;
+    color: #F8F8F8;
+    font-weight: 900;
+    border-bottom: 1px solid;
+    margin-top: 10rem !important;
+}
+
+.navcon h3 {
+    font-weight: 900 !important;
+    text-align: left;
+}
+
+.navcon ul {
+    display: flex;
+    gap: 20px;
+    padding: 0%;
+    justify-content: center;
+}
+
+.navcon .view {
+    text-align: right;
+    padding-bottom: 8px;
+}
+
+.coffee-shop li {
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: inset 0px 0px 10px#313131;
+    border-radius: 30px;
+}
+
+.coffee-shop li:hover {
+    color: #ff8d21;
+}
+
+.activef {
+    color: #383bff;
+
+}
+
+.coffee-shop .cart {
+    position: relative;
+    padding: 30px;
+    margin: 50px 0px;
+    background-color: #007050;
+}
+
+.coffee-shop .cart-item .card {
+    /* border-radius: 30px; */
+    margin-bottom: 80px;
+    /* overflow: hidden; */
+}
+
+.coffee-shop .cart .heart {
+    position: absolute;
+    margin: 30px;
+}
+
+.coffee-shop .cart .cart-img {
+    position: relative;
+}
+
+.coffee-shop .cart .cart-icon {
+    display: none;
+}
+
+.cart-img:hover .cart-icon {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url('../img/icons8-circle-50.png'), auto;
+}
+
+.coffee-shop .cart h3 {
+    font-weight: 900 !important;
+    font-size: 1.1rem !important;
+    cursor: url('../img/icons8-circle-50.png'), auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer !important;
+}
+
+.shop .card {
+    position: relative;
+    max-width: 350px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 2rem;
+    padding-left: 4.6rem;
+    background-color: #F8F6F1;
+    color: #000000;
+    border: none;
+    box-shadow: 0px 0px 13px #ccc;
+}
+
+.shop .card img {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    left: -8%;
+    top: 30%;
+}
+
+.shop .card .rate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-success {
+    border-radius: 20px;
+    background-color: #114639;
+}
+
+.shop .card small {
+    font-size: 0.8rem;
+}
+
+.shop h3 {
+    font-size: 1.3rem;
+}
+
+.shop .card .heart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+}
+
+.visit-shop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.visit-shop button {
+    border: none;
+    border-radius: 40px;
+    background-color: #E7E5EA;
+    padding: 15px 30px;
+}
+
+.free {
+    background-color: #114639;
+    padding: 35px;
+    color: #FFF;
+}
+
+.free .col-12 {
+    display: flex;
+    gap: 40px;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.contact .cardimg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact .cardimg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact .bg-dark {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.contact form h5 {
+    font-weight: 900;
+    color: #114639;
+}
+
+.contact form small {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.contact form {
+    box-shadow: 15px 15px 30px #ccc;
+    border-radius: 20px;
+}
+
+form .form-control {
+    height: 3rem;
+}
+
+#location {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid;
+}
+
+#location:focus {
+    outline: none !important;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer h5 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer li {
+    margin-top: 10px;
+}
+
+.footer li a {
+    font-weight: 400 !important;
+}
+
+.footer input {
+    border: none;
+    height: 4rem;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+
+.footer .button {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.footer button {
+    position: absolute;
+    right: 10px !important;
+    padding: 15px 40px !important;
+    border-radius: 30px;
+}
+
+.footer .tb {
+    border-top: 1px solid;
+    padding-top: 30px;
+}
+
+.footer .tb a {
+    color: #114639 !important;
+
+}
+
+.footer .bb {
+    margin-bottom: 70px;
+}
+
+.uparrow a {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: #383bff;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff !important;
+}
+
+@media (max-width:350px) {
+    .pocket {
+        margin: 20px 0% !important;
+
+    }
+
+    .pocket .card {
+        min-width: auto !important;
+        /* padding-left: 2rem; */
+    }
+
+    /* .pocket .card  img{
+        display: none !important;
+    } */
+
+    body {
+        word-break: break-all !important;
+        word-wrap: break-word !important;
+    }
+
+    .navbar .navbar-brand {
+        white-space: wrap !important;
+    }
+
+    .contact form {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width:750px) {
+    .navbar {
+        position: static;
+    }
+
+    .pure {
+        background-image: none;
+        padding: 10px 0px 10px 0px !important;
+    }
+}
+
+@media (max-width:1000px) {
+    .coffee-shop .green {
+        background-color: #007050;
+    }
+}
+
+@media (max-width:770px) {
+    .circle {
+        display: none;
+    }
+
+    .pure h1 {
+        font-size: 2.3rem;
+        line-height: 50px;
+        margin-top: 20px;
+    }
+
+    .independ .card {
+        position: static;
+        transform: none;
+    }
+
+    .independ .card2 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+
+    .three {
+        overflow: hidden;
+    }
+
+    .three img {
+        transform: scale(1.3);
+    }
+
+    .bg-success {
+        background-color: #607C77 !important;
+    }
+
+    .navcon {
+        margin-top: 3rem !important;
+        gap: 25px;
+    }
+
+    .navcon h3 {
+        text-align: left;
+    }
+
+    .navcon ul {
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .navcon .view {
+        padding-bottom: 8px;
+        text-align: left;
+    }
+
+    .coffee-shop .cart-item .card {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .coffee-shop {
+        margin-bottom: 100px;
+    }
+
+    .free .col-12 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+    background-image: url("../img/greenleafimages.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5% 0;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active2,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* animetion.................................................................................................. */
+/* Add this to your CSS file */
+.navbar-nav li a {
+    transition: color 0.3s !important;
+    /* Smooth color transition */
+}
+
+.navbar-nav li a:hover {
+    color: #FF5733 !important;
+    /* Change to your desired hover color */
+}
+
+.pure h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.input-group,
+.input-group-text {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transform: translateX(0) !important;
+}
+
+.independ h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated2 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+i {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated3 {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.contact form {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated4 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated5 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Optional animation for social media icons */
+.fa-brands {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.fa-brands:hover {
+    opacity: 1;
+}

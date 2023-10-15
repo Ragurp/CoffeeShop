@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <!-- bootstrap.................... -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome........................ -->
+    <script
+      src="https://kit.fontawesome.com/fb671d7a9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css............................... -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Swiper CSS -->
+  </head>
+
+  <body>
+    <!-- navbar........................................ -->
+    <div class="profile"><div class="welcomeText">Hi . . . <span class="userName"> User </span> welcome to our Coffee Shop . . . !</div></div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/Coffee_beans.svg" alt="" /> Coffee Shop</a
+        >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="ms-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  HOME
+                  <div class="circle active"><div class="box"></div></div>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="dropdown-toggle nav-link"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                  <!-- <div class="circle d-none"><div class="box"></div></div> -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">SHOP</a></li>
+                  <li><a class="dropdown-item" href="#">SHOP STYLE1</a></li>
+                  <li><a class="dropdown-item" href="#">SHOP STYLE2</a></li>
+                  <li class="dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropdownMenu1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >SINGLE PRODUCT</a
+                    >
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="multilevelDropdownMenu1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">SIMPLE PRODUCT</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">VARIABLE PRODUCT</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">GROUPED PRODUCT</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">EXTERNAL/AFFILIATE</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">IN STOCK</a></li>
+                      <li><a class="dropdown-item" href="#">ON SALE</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">OUT OF STOCK</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+                  <li><a class="dropdown-item" href="#">CART</a></li>
+                  <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+                  <li><a class="dropdown-item" href="#">WISHLIST</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  ABOUT
+                  <div class="circle"><div class="box"></div></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  BLOG
+                  <div class="circle"><div class="box"></div></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  CONTACT
+                  <div class="circle"><div class="box"></div></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a class="navbar-icon" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a class="navbar-icon" href="#"
+            ><i class="fa-regular fa-heart"></i
+          ></a>
+          <a
+            class="navbar-icon"
+            href="log_in&sign_up/index.html"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+
+          <button class="cart-bag navbar-icon position-relative" href="#">
+            <i class="fa fa-bag-shopping"></i
+            ><span
+              class="counter position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            >
+              0
+            </span>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- small size nav................................. -->
+    <div class="nav d-none text-light">
+      <div class="x"><a class="fa-solid fa-x fa-2xl"></a></div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> HOME </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="dropdown-toggle nav-link"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            SHOP
+          </a>
+          <ul
+            class="dropdown-menu bg-dark"
+            aria-labelledby="dropdownMenuLink"
+            style="width: 200px"
+          >
+            <li><a class="dropdown-item" href="#">SHOP</a></li>
+            <li><a class="dropdown-item" href="#">SHOP STYLE1</a></li>
+            <li><a class="dropdown-item" href="#">SHOP STYLE2</a></li>
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                href="#"
+                id="multilevelDropdownMenu1"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >SINGLE PRODUCT</a
+              >
+              <ul
+                class="dropdown-menu bg-dark"
+                aria-labelledby="multilevelDropdownMenu1"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">SIMPLE PRODUCT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">VARIABLE PRODUCT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">GROUPED PRODUCT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">EXTERNAL/AFFILIATE</a>
+                </li>
+                <li><a class="dropdown-item" href="#">IN STOCK</a></li>
+                <li><a class="dropdown-item" href="#">ON SALE</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">OUT OF STOCK</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+            <li><a class="dropdown-item" href="#">CART</a></li>
+            <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+            <li><a class="dropdown-item" href="#">WISHLIST</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"> ABOUT </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"> BLOG </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"> CONTACT </a>
+        </li>
+      </ul>
+    </div>
+    <!-- navbar....small size nav......................................................... -->
+
+    <!-- cart box.................................................. -->
+    <div class="cart-box d-none">
+      <div class="add-box"></div>
+      <div class="cart-x"><a class="fa-solid fa-x fa-2xl"></a></div>
+      <div class="buy m-5 p-5">
+        <p class="total text-warning">Total Amount : $00.00</p>
+        <button class="btn btn-primary ps-5 pe-5">Buy</button>
+      </div>
+    </div>
+    <!-- cart box.................................................. -->
+
+    <div class="container-fluid">
+      <!-- pure coffee............................................ -->
+      <div class="pure">
+        <div class="row">
+          <div class="col col-md-5 d-md-block d-none"></div>
+          <div class="col-12 col-md-7">
+            <h1>
+              Pure Coffee. <br />
+              Pure Experience.
+            </h1>
+            <p class="mt-4">
+              We’re proud to offer our exquisite coffee and proud to support
+              producer partners doing sustainability work that benefits their
+              farms, their communities, and the planet.
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="input-group mt-5 mb-5">
+                  <input type="text" placeholder="Email Address*" />
+                  <span class="input-group-text">Join Now</span>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- independ................................. -->
+      <div class="independ pt-3 mt-5 mb-5">
+        <h1>An independent, sibling-owned coffee company</h1>
+        <div class="outer"><div class="line m-3"></div></div>
+        <div class="row">
+          <div class="col-12 col-md-6 mt-5">
+            <img
+              src="assets/img/Latte-Art-Nicely-Copy1-thumb-620x441-58860.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2 mt-5 ml-2 d-md-block d-none">
+            <img class="patten" src="assets/img/Picture3.png" alt="" />
+          </div>
+          <div class="col-12 col-md-4 mt-4 content">
+            <h3>We believe a good cup of coffee should tell a story</h3>
+            <p>
+              Whether you’re searching for something new to warm your mug,
+              seeking the best brew method for your favorite blend or exploring
+              our rarest offerings, you’ve come to the right place.
+            </p>
+            <button>Discover Now</button>
+          </div>
+          <div class="card">
+            <div class="card-img-top img">
+              <img src="assets/img/twocoffeebeans.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title m-3"><b>Sourcing green coffee</b></h5>
+              <p class="card-text">
+                Coffee is a seasonal fruit and we source it directly from the
+                origin in freshly harvested lots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra space .................................. -->
+      <div class="m-md-5 p-md-5"></div>
+      <!-- extra space .................................. -->
+
+      <!-- second independ......................................... -->
+      <div class="independ mt-5 mb-md-5">
+        <div class="row g-0">
+          <div class="col-12 col-md-6 mt-5 d-none d-md-block">
+            <img src="assets/img/coffeecup.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 mt-5 three">
+            <img src="assets/img/threecoffee.jpg" alt="" />
+          </div>
+          <div class="card card2">
+            <div class="card-img-top img">
+              <i class="fa fa-mug-hot"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title m-3">
+                <b>Roasting is the transformation</b>
+              </h5>
+              <p class="card-text">
+                Coffee is a seasonal fruit and we source it directly from the
+                origin in freshly harvested lots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra space .................................. -->
+      <div class="p-2 bg-success"></div>
+      <!-- extra space .................................. -->
+
+      <!-- Coffee Shop..............................................   -->
+      <div class="coffee-shop">
+        <div class="green pt-5">
+          <div class="row mt-5 pt-md-5 navcon">
+            <div class="col-lg-3 col-12 coffee">
+              <h3>Coffee Shop</h3>
+            </div>
+            <div class="col-lg-6 col-12 all">
+              <ul type="none">
+                <li class="active">All</li>
+                <li>Coffee</li>
+                <li>Brewing Tools</li>
+                <li>Coffee Beans</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12 view">VIEW ALL</div>
+          </div>
+          <!-- cart row ......................... -->
+          <div class="row cart g-5">
+            <!-- cart-item1................. -->
+            <div class="cart-item col-12 col-md-6 col-lg-3 coffee">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/wooden-grinder.jpg"
+                    class="card-img-top img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                  <div class="add cart-icon">
+                    <a>
+                      <i class="fa fa-cart-shopping fa-2xl"></i>
+                      <br />
+                      <br />
+                      <p>Add to cart</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-text">Wooden coffee grinder vintage style</h3>
+                  <span class="cost">$19.00</span>
+                  <br />
+                  <a class="add"><small>ADD TO CART</small></a>
+                </div>
+                <div class="heart">
+                  <a href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- cart-item2................. -->
+            <div class="cart-item col-12 col-md-6 col-lg-3 brewing-tools">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/black-pot.jpg"
+                    class="card-img-top img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                  <div class="add cart-icon">
+                    <a>
+                      <i class="fa fa-cart-shopping fa-2xl"></i>
+                      <br />
+                      <br />
+                      <p>Add to cart</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-text">
+                    Bialetti moka pot Moka Express in black
+                  </h3>
+                  <span class="cost">$18.00</span>
+                  <br />
+                  <a class="add"><small>ADD TO CART</small></a>
+                </div>
+                <div class="heart">
+                  <a href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- cart-item3................. -->
+            <div class="cart-item col-12 col-md-6 col-lg-3 coffee-beans">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/coffee-maker.jpg"
+                    class="card-img-top img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                  <div class="add cart-icon">
+                    <a>
+                      <i class="fa fa-cart-shopping fa-2xl"></i>
+                      <br />
+                      <br />
+                      <p>Add to cart</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-text">
+                    Coffee Maker with Auto Pause and Glass Carafe
+                  </h3>
+                  <span class="cost">$17.00</span>
+                  <br />
+                  <a class="add"><small>ADD TO CART</small></a>
+                </div>
+                <div class="heart">
+                  <a href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- cart-item4................. -->
+            <div class="cart-item col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/glasss-cup.jpg"
+                    class="card-img-top img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                  <div class="add cart-icon">
+                    <a>
+                      <i class="fa fa-cart-shopping fa-2xl"></i>
+                      <br />
+                      <br />
+                      <p>Add to cart</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-text">
+                    Hario Coffee Dripper V60 01 Clear Plastic
+                  </h3>
+                  <span class="cost">$16.00</span>
+                  <br />
+                  <a class="add"><small>ADD TO CART</small></a>
+                </div>
+                <div class="heart">
+                  <a href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop ..............where a cup of coffee is a moment to share -->
+      <div class="shop pt-3 mt-5 mb-5">
+        <h1>Where a cup of coffee is a moment to share</h1>
+        <div class="outer"><div class="line m-3"></div></div>
+        <p class="text-center pt-3">
+          It’s that moment when your hand is warmed by the mug, you raise it to
+          <br />
+          your nose, inhale deeply, and then take a sip.
+        </p>
+
+        <div class="row">
+          <!-- one................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/1brown-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Owl's Howl</h3>
+              <p>Cacao Nib, Stone Fruit, Candied Orange Peel.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$14.00</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- two..................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/2bluec-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Hunky Dory</h3>
+              <p>Organic. Decaf, Toffee, Red Grape, Bergamot.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$25.89</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- three...................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/3new-brown-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Ethiopia</h3>
+              <p>Organic. Benti Nenka, Hambela Candied Lime.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$16.99</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- one................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/1brown-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Blue Moon</h3>
+              <p>Coffee plant’s fruits un-roasted coffee beans.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$20.00</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- two..................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/2bluec-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Colombia</h3>
+              <p>Organic. Finca Las Igrillas, Pancho Delgado.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$19.00</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- three...................... -->
+          <div class="pocket col m-5">
+            <div class="card">
+              <img
+                src="assets/img/3new-brown-450x641.png"
+                alt="coffee related picture"
+              />
+              <h3>Crown Point</h3>
+              <p>Organic. Raspberry, Chocolate, Butterscotch.</p>
+              <div class="rate">
+                <div>
+                  <h3><small>From</small> <span class="cost">$18.00</span></h3>
+                </div>
+                <button class="add me-3 btn btn-success" type="button">
+                  Shop Now
+                </button>
+              </div>
+              <div class="heart">
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra space .................................. -->
+      <div class="visit-shop mb-5"><button class="btn">Visit Shop</button></div>
+      <!-- extra space .................................. -->
+
+      <!--Free Support..................................... -->
+      <div class="free mb-5">
+        <div class="row g-5">
+          <div class="col-12 col-md-4">
+            <div class="mb-4"><i class="fa fa-cube fa-2xl"></i></div>
+            <div>
+              <h3>Free Shipping</h3>
+              <p>
+                Free standard shipping available from CoffeeShop on USA orders
+                of over $49.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-4"><i class="fa fa-arrows-rotate fa-2xl"></i></div>
+            <div>
+              <h3>Exchanges & Returns</h3>
+              <p>Exchange the item for another size within a 60 day period.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-4"><i class="fa-solid fa-message fa-2xl"></i></div>
+            <div>
+              <h3>24/7 Free Support</h3>
+              <p>
+                We’re here 24 hours a day, every day of the week, including
+                holidays.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra space .................................. -->
+      <div class="p-3"></div>
+      <!-- extra space .................................. -->
+
+      <!-- contact................................. -->
+      <div class="contact">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1 class="text-start p-5 pb-0">
+              We don’t make your coffee. <br />
+              We make your day.
+            </h1>
+            <!-- Carousel Example.................. -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="0"
+                  class="active bg-dark"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="1"
+                  class="bg-dark"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="2"
+                  class="bg-dark"
+                ></button>
+              </div>
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="content mb-5 p-5">
+                    <p>
+                      “I love the coffee from this shop! I am so glad I found
+                      them. Everything has been spot on, fits wonderfully, taste
+                      is great and lots to choose from. Thanks!”
+                    </p>
+                    <div class="cardimg">
+                      <img
+                        src="assets/img/testimonial-1.jpg"
+                        alt="profile photo"
+                      />
+                      <div class="name">
+                        <p>
+                          <b>STELLA SMITH</b>
+                          <br />New York City
+                        </p>
+                        <div>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="content mb-5 p-5">
+                    <p>
+                      “I love the coffee from this shop! I am so glad I found
+                      them. Everything has been spot on, fits wonderfully, taste
+                      is great and lots to choose from. Thanks!”
+                    </p>
+                    <div class="cardimg">
+                      <img
+                        src="assets/img/testimonial-3.jpg"
+                        alt="profile photo"
+                      />
+                      <div class="name">
+                        <p>
+                          <b>STELLA SMITH</b>
+                          <br />New York City
+                        </p>
+                        <div>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="content mb-5 p-5">
+                    <p>
+                      “I love the coffee from this shop! I am so glad I found
+                      them. Everything has been spot on, fits wonderfully, taste
+                      is great and lots to choose from. Thanks!”
+                    </p>
+                    <div class="cardimg">
+                      <img
+                        src="assets/img/testimonial-4.jpg"
+                        alt="profile photo"
+                      />
+                      <div class="name">
+                        <p>
+                          <b>STELLA SMITH</b>
+                          <br />New York City
+                        </p>
+                        <div>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Example.................. -->
+            <div class="d-flex" style="flex-wrap: wrap; justify-content: space-evenly;">
+              <p>
+                <b>Main Address</b>
+                <br />1500 Broadway. NYC
+              </p>
+              <p>
+                <b>Main Address</b>
+                <br />1500 Broadway. NYC
+              </p>
+            </div>
+          </div>
+          <!-- form..................................... -->
+          <div class="col-12 col-md-6 p-5">
+            <form class="p-5">
+              <h5>You can make a booking now and change or cancel it later</h5>
+              <div class="mb-3 mt-3">
+                <label for="location" class="form-label m-0 p-0"
+                  ><b>Location</b></label
+                >
+                <select name="location" id="location" class="m-0 p-0">
+                  <option value="1500Broadway">
+                    1500 Broadway Times Square
+                  </option>
+                  5th Avenue NY
+                  <option value="5thAvenueNY">5th Avenue NY</option>
+                  <option value="SanFrancisco">San Francisco</option>
+                </select>
+              </div>
+              <br />
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  ><b>Name</b><small>(required)</small></label
+                >
+                <input
+                  type="email"
+                  required
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <br />
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  ><b>Email</b><small>(required)</small></label
+                >
+                <input
+                  type="password"
+                  required
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <br />
+              <button type="submit" class="btn btn-success form-control">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra space .................................. -->
+      <div class="p-5"></div>
+      <!-- extra space .................................. -->
+
+      <!-- card slider....................................... -->
+      <div class="slideshow-container">
+        <div
+          class="row pb-5 mb-5 m-3 text-light"
+          style="border-bottom: 1px solid"
+        >
+          <div class="col">
+            <h3>Daily coffee news by Coffee Shop</h3>
+          </div>
+          <div class="col text-end">
+            <small>VISIT OUR BLOG</small>
+          </div>
+        </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- one -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-img-1.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Tricks</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Extreme Price Volatility Undermines The Coffee
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-2.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Tricks</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Matchmaking At The SCA Expo SCA Expo SCA Expo
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-3.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Extreme Price Volatility Undermines Undermines
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- two -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-2.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    The winners of the 2022 united states states
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-3.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Tricks</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Matchmaking At The SCA Expo at The SCA Expoaaaa
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-4.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Tricks</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Extreme Price Volatility Undermines The Coffee
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- three -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-3.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Parsing Apart The SCA Report On Profitability
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-4.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Uganda Plots Major of Coffee the Sector Growth
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-5.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Madagascar Cacao the Program Featured On SCA
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- four -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-4.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Matchmaking At The SCA Expo at The SCA Expo
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-5.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Parsing Apart The SCA Report On Profitability
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-6.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Industry Initiative: The of Specialty Coffee
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- five -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-5.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Parsing Apart The SCA Report On Profitability
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-6.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Uganda Plots Major Coffee Sector Growth Sector
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-7.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Madagascar Cacao Program Featured On SCA caca
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- six -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-6.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    What Water Smart Coffee Milling the Looks Like
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-7.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Industry Initiative: The Specialty Coffee
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-8.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    What Water Smart Coffee Milling Looks Like
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <!-- saven.... -->
+        <div class="mySlides ps-5 pe-5">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-7.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Extreme Price Volatility a The Coffee Sector
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-8.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Parsing Apart The SCA Report On Profitability
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block s925">
+              <div class="card">
+                <div class="cart-img">
+                  <img
+                    src="assets/img/single-featured-9.jpg"
+                    class="img-thumbnail"
+                    alt="Wooden coffee grinder vintage style"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <div
+                    style="
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                    "
+                  >
+                    <a href="#" style="text-decoration: underline !important"
+                      >Updates</a
+                    ><span>November19,2022</span>
+                  </div>
+                  <br />
+                  <h5 class="card-text">
+                    Uganda Plots Major Coffee the Sector Growth
+                  </h5>
+                  <br />
+                  <a><small>READ MORE</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+
+      <!-- card slider....................................... -->
+      <!-- extra space .................................. -->
+      <div class="p-5"></div>
+      <!-- extra space .................................. -->
+      <!-- footer......................................... -->
+      <div class="footer mb-5">
+        <div class="row pb-5 pb-md-0 bb">
+          <div class="col-12 col-md-3">
+            <h3>
+              <img src="assets/img/Coffee_beans.svg" alt="" /> Coffee Shop
+            </h3>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5><b>Products</b></h5>
+            <ul type="none">
+              <li><a href="#">UI Kits</a></li>
+              <li><a href="#">Wireframe Kits</a></li>
+              <li><a href="#">Icon Sets</a></li>
+              <li><a href="#">Theme & Templates</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5><b>Company</b></h5>
+            <ul type="none">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Partnership</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5><b>Support</b></h5>
+            <ul type="none">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help Desk</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Sales</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h5><b>Newsletter</b></h5>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email Address*"
+            />
+            <div class="button">
+              <button class="btn btn-success">Subscribe!</button>
+            </div>
+          </div>
+        </div>
+        <div class="row tb">
+          <div class="col">
+            © 2023 Coffee Shop. All rights reserved. Privacy Policy | Terms &
+            Conditions
+          </div>
+          <div class="col text-end">
+            <a
+              target="_blank"
+              href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&q=facebook&rlz=1C1CHBF_enIN1028IN1028&oq=fa&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiKBTINCAQQABiDARixAxiABDINCAUQABiDARixAxiABDIHCAYQABiABDIHCAcQLhiABDIHCAgQABiABDIHCAkQABiPAtIBCTI3ODZqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8"
+              class="fa-brands fa-facebook fa-2xl me-3 mb-3"
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C1CHBF_enIN1028IN1028&oq=tw&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyDwgAEEUYORiDARixAxiABDITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDITCAUQLhiDARjHARixAxjRAxiABDINCAYQABiDARixAxiKBTINCAcQABiDARixAxiABDINCAgQLhiDARixAxiKBTIHCAkQABiPAtIBCTM3OTNqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8"
+              class="fa-brands fa-twitter fa-2xl me-3 mb-3"
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.google.com/search?q=instagram&sca_esv=572931913&rlz=1C1CHBF_enIN1028IN1028&sxsrf=AM9HkKm6e7DRgjnYWVhxxPEc6VKj0IUSLw%3A1697140615181&ei=h08oZcPZCpL6wQOWpYzQAQ&oq=in&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmluKgIIAzIHECMYigUYJzIHECMYigUYJzIEECMYJzINEAAYigUYsQMYgwEYQzIHEAAYigUYQzIHEAAYigUYQzINEAAYigUYsQMYgwEYQzIHEAAYigUYQzILEAAYigUYsQMYgwEyBxAAGIoFGENIhTtQiwZYnBRwAngBkAECmAFzoAG-BaoBAzcuMbgBAcgBAPgBAagCFMICChAAGEcY1gQYsAPCAg0QLhjHARjRAxiKBRgnwgIIEAAYigUYkQLCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIaEC4YxwEY0QMYigUYlwUY3AQY3gQY4ATYAQHCAg0QLhjHARjRAxjqAhgnwgIHECMY6gIYJ8ICFhAAGAMYjwEY5QIY6gIYtAIYjAPYAQLCAgsQLhiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIOEC4YigUYsQMYgwEY1ALCAgUQABiABOIDBBgAIEGIBgGQBgi6BgYIARABGBS6BgYIAhABGAs&sclient=gws-wiz-serp"
+              class="fa-brands fa-instagram fa-2xl"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reloader icon............................. -->
+
+    <div class="uparrow"><a href="#"><i class="fa-solid fa-arrow-up fa-xl"></i></a></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- javascript................... -->
+    <script src="assets/js/index.js"></script>
+    <!-- bootstrap.................... -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-image: conic-gradient(rgb(255, 255, 255), rgb(55, 255, 255), rgb(55, 55, 255));
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: rgb(60, 255, 0);
+}
+
+input {
+  padding: 5px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: blue;
+  font-weight: 900;
+  box-shadow: inset 3px 3px 3px #aaaaaa;
+  background-color: #fff;
+}
+
+.submit {
+  background-color: green;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
