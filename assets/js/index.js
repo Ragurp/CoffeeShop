@@ -20,7 +20,6 @@ function setName() {
 window.addEventListener("load", () => {
   setTimeout(() => {
     if (userName.innerHTML.trim() == "User") {
-      console.log("hi....");
       Swal.fire({
         title: `Hello...!`,
         text: 'Please... SignUp/LogIn...!',
