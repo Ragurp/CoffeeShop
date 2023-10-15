@@ -150,7 +150,7 @@ function addToCart() {
       addBox.innerHTML +=
         `<div class="row bg-info">
         <h6 class="name">${a[1]}</h6>
-        <div class="col-4 cart-image">
+        <div class="col-md-4 col-12 cart-image">
           <img
             src="${a[0]}"
             alt="cart img"
@@ -158,7 +158,7 @@ function addToCart() {
             height="100px"
           />
         </div>
-        <div class="col-6 cart-topic">
+        <div class="col-md-6 col-12 cart-topic">
           <div class="qtydiv">
             <h3 class="cost">${a[2]}</h3>
             <input
@@ -173,7 +173,7 @@ function addToCart() {
             <p class="tcost">${a[2]}</p>
           </div>
         </div>
-        <div class="col-2 cart-delete">
+        <div class="col-md-2 col-12 cart-delete">
           <a class="fa fa-trash fa-2xl text-danger"></a>
         </div>
       </div>`;

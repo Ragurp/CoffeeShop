@@ -121,7 +121,8 @@ body {
 
 .qtydiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .qtydiv input {
@@ -131,7 +132,8 @@ body {
 
 .tdiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cart-delete {
