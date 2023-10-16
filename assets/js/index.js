@@ -1,6 +1,6 @@
 // profile update.................
 let userName = document.querySelector(".userName");
-let obj = localStorage.getItem("logerName");
+let obj = localStorage.getItem("coffeeShopLogerName");
 obj = JSON.parse(obj) || "none";
 if (obj != "none") {
   userName.innerHTML = `${obj.Name}`;

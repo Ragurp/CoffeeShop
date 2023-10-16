@@ -8,7 +8,7 @@ function formchecker() {
       Password: password,
     };
     let value = JSON.stringify(person);
-    let emcheck = localStorage.getItem(email);
+    let emcheck = localStorage.getItem(`coffeeShop${email}`);
     if (emcheck) {
       document.getElementById("div").innerHTML =
         `<div>You already created account please <a href="log_in.html">LogIn?</a></div>`;
@@ -33,7 +33,7 @@ function formchecker() {
           "2px solid orange";
       }, 1000);
     } else {
-      localStorage.setItem(email, value);
+      localStorage.setItem(`coffeeShop${email}`, value);
       setTimeout(() => {
         location.replace("log_in.html")
       }, 100);

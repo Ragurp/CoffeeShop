@@ -1,13 +1,13 @@
 function formchecker() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
-  let emcheck = localStorage.getItem(email);
+  let emcheck = localStorage.getItem(`coffeeShop${email}`);
   if (email != "" && password != "") {
     if (emcheck) {
       let value = JSON.parse(emcheck);
       if (value.Password === password) {
         value = JSON.stringify(value);
-        localStorage.setItem("logerName", value);
+        localStorage.setItem("coffeeShopLogerName", value);
         setTimeout(() => {
           location.replace("../index.html")
         }, 100);
